@@ -1,4 +1,5 @@
 const { v4: uuid } = require('uuid');
+
 const Workout = require('../models/Workout');
 
 exports.getAllWorkouts = (filterParams) => {

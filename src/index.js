@@ -1,4 +1,5 @@
 const express = require('express');
+
 const v1WorkoutRouter = require('./v1/routes/workoutRoutes');
 
 const app = express();
