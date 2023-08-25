@@ -1,9 +1,9 @@
 const { v4: uuid } = require('uuid');
 const Workout = require('../models/Workout');
 
-exports.getAllWorkouts = () => {
+exports.getAllWorkouts = (filterParams) => {
   try {
-    const allWorkouts = Workout.getAllWorkouts();
+    const allWorkouts = Workout.getAllWorkouts(filterParams);
 
     return allWorkouts;
   } catch (error) {
